@@ -28,3 +28,17 @@ The repository build reuses the included Windhawk compiler and places its
 outputs under the ignored `build/` directory. It does not install the builds.
 The metadata validator checks IDs, versions, guides, credits, and links.
 These checks do not establish compatibility with every Windows build.
+
+## Official catalog submissions
+
+On November 2, 2026, both source files passed the official catalog's
+`pr_validation.py` locally with their relative `mods/` paths and the
+submitter's GitHub identity, with no warnings.
+
+- [Large icons: PR #6894](https://github.com/ramensoftware/windhawk-mods/pull/6894).
+- [Desktop Window Cards: PR #6895](https://github.com/ramensoftware/windhawk-mods/pull/6895).
+
+Each request adds exactly one source file and discloses Codex assistance.
+The cards submission also identifies HaVeN80's upstream engine and its
+license. Maintainer review and catalog acceptance are still pending;
+the pull request pages are the source of truth for their current status.

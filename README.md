@@ -21,8 +21,11 @@ be added to this repository without creating a separate repository per mod.
    file's complete contents, and compile it using the editor.
 4. Enable the mod and open **Details > Settings** to customize it.
 
-These are local custom mods; they have not been submitted to the official
-Windhawk catalog. Do not enable two editions of Desktop Window Cards at the
+Both mods have been submitted to the official Windhawk catalog and are
+awaiting maintainer review. Track [Large icons (#6894)](https://github.com/ramensoftware/windhawk-mods/pull/6894)
+and [Desktop Window Cards (#6895)](https://github.com/ramensoftware/windhawk-mods/pull/6895).
+Submission does not mean catalog acceptance; use the manual installation
+steps above while review is pending. Do not enable two editions of Desktop Window Cards at the
 same time. Internal mod IDs retain their original spelling so existing
 settings remain compatible.
 
