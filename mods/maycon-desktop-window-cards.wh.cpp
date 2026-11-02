@@ -3,7 +3,7 @@
 // @name            Desktop Window Cards — DevMaycon
 // @description     Animated desktop previews, monitor-aware grids, and app exclusions. Customized by DevMaycon.
 // @version         1.0.1
-// @author          DevMaycon (custom edition); HaVeN80 (original engine)
+// @author          DevMaycon
 // @github          https://github.com/MayconDIS
 // @homepage        https://github.com/MayconDIS/Windhawk_Mods
 // @include         windhawk.exe
