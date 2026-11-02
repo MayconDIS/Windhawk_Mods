@@ -8,7 +8,7 @@
 - Exact reference: [commit 15eab1d96589bcbec11e4d9e8aeb2659510e1206](https://github.com/ramensoftware/windhawk-mods/blob/15eab1d96589bcbec11e4d9e8aeb2659510e1206/mods/desktop-window-cards.wh.cpp)
 - License: **GPL-3.0-only**, reproduced in [LICENSE](LICENSE).
 
-The DevMaycon edition retains the original rendering and card engine.
+The Dev_Maycon edition retains the original rendering and card engine.
 Local changes include configuration refactoring, scoped settings ownership,
 exclusion normalization, worker failure handling, independent window classes,
 different defaults, and original English documentation and illustrations.

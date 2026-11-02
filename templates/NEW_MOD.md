@@ -13,7 +13,7 @@
 
 ## Credits and links
 
-- Custom edition: **DevMaycon**.
+- Custom edition: **Dev_Maycon**.
 - Upstream code: list the author, exact reference, and license when applicable.
 - Repository: [Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - Profile: [MayconDIS](https://github.com/MayconDIS).

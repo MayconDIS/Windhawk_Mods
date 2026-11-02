@@ -1,7 +1,7 @@
 [
   {
     "id": "maycon-large-folder-icons",
-    "name": "Large icons — DevMaycon",
+    "name": "Large icons — Dev_Maycon",
     "version": "1.1.0",
     "source": "mods/maycon-large-folder-icons.wh.cpp",
     "guide": "docs/large-icons/README.md",
@@ -10,7 +10,7 @@
   },
   {
     "id": "maycon-desktop-window-cards",
-    "name": "Desktop Window Cards — DevMaycon",
+    "name": "Desktop Window Cards — Dev_Maycon",
     "version": "1.0.1",
     "source": "mods/maycon-desktop-window-cards.wh.cpp",
     "guide": "docs/desktop-window-cards/README.md",
