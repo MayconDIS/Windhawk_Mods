@@ -15,5 +15,5 @@
 
 - Custom edition: **DevMaycon**.
 - Upstream code: list the author, exact reference, and license when applicable.
-- Repository: [devmaycon-windhawk-mods](https://github.com/MayconDIS/devmaycon-windhawk-mods).
+- Repository: [Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - Profile: [MayconDIS](https://github.com/MayconDIS).

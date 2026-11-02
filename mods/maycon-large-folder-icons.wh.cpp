@@ -5,7 +5,7 @@
 // @version         1.1.0
 // @author          DevMaycon
 // @github          https://github.com/MayconDIS
-// @homepage        https://github.com/MayconDIS/devmaycon-windhawk-mods
+// @homepage        https://github.com/MayconDIS/Windhawk_Mods
 // @include         explorer.exe
 // @architecture    x86-64
 // @compilerOptions -lole32 -loleaut32 -luuid -lshell32
@@ -16,7 +16,7 @@
 /*
 # Large icons — DevMaycon
 
-![Large icons — DevMaycon](https://raw.githubusercontent.com/MayconDIS/devmaycon-windhawk-mods/main/assets/large-icons.svg)
+![Large icons — DevMaycon](https://raw.githubusercontent.com/MayconDIS/Windhawk_Mods/main/assets/large-icons.svg)
 
 *Original project illustration.*
 
@@ -82,7 +82,7 @@ Original project: **DevMaycon**, developed with Codex assistance. Licensed under
 
 - Custom edition and maintenance: **DevMaycon**.
 - Development assistance: **OpenAI Codex**.
-- Repository: [MayconDIS/devmaycon-windhawk-mods](https://github.com/MayconDIS/devmaycon-windhawk-mods).
+- Repository: [MayconDIS/Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - GitHub profile: [MayconDIS](https://github.com/MayconDIS).
 */
 // ==/WindhawkModReadme==

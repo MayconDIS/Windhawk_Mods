@@ -3,7 +3,7 @@ $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot -Parent
 $mods=Get-Content -Raw -LiteralPath (Join-Path $root 'mods.json') | ConvertFrom-Json
 $ids=[Collections.Generic.HashSet[string]]::new()
-$repoUrl='https://github.com/MayconDIS/devmaycon-windhawk-mods'
+$repoUrl='https://github.com/MayconDIS/Windhawk_Mods'
 $profileUrl='https://github.com/MayconDIS'
 foreach($mod in $mods){
     if(-not $ids.Add($mod.id)){throw ('Duplicate mod ID: '+$mod.id)}

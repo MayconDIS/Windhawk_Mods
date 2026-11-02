@@ -1,4 +1,4 @@
-# DevMaycon Windhawk Mods
+# Windhawk_Mods
 
 A growing collection of Windows desktop customizations maintained by
 [DevMaycon (MayconDIS)](https://github.com/MayconDIS).
@@ -53,7 +53,7 @@ templates/  Checklist for adding another mod
 
 ## Add the next idea
 
-Open an [idea issue](https://github.com/MayconDIS/devmaycon-windhawk-mods/issues/new?template=mod-idea.yml)
+Open an [idea issue](https://github.com/MayconDIS/Windhawk_Mods/issues/new?template=mod-idea.yml)
 or follow [CONTRIBUTING.md](CONTRIBUTING.md). Every new project should have a
 unique ID, a guide, tests appropriate to its behavior, and a credits section
 linking back to this repository and the maintainer's profile.
@@ -71,5 +71,5 @@ engine's authorship is preserved in its source and guide. See
 - Maintainer and custom editions: **DevMaycon**.
 - Development assistance: **OpenAI Codex**.
 - Original Desktop Window Cards engine: **HaVeN80**.
-- Repository: [MayconDIS/devmaycon-windhawk-mods](https://github.com/MayconDIS/devmaycon-windhawk-mods).
+- Repository: [MayconDIS/Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - GitHub profile: [MayconDIS](https://github.com/MayconDIS).

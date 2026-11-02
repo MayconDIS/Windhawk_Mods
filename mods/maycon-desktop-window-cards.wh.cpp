@@ -5,7 +5,7 @@
 // @version         1.0.1
 // @author          DevMaycon (custom edition); HaVeN80 (original engine)
 // @github          https://github.com/MayconDIS
-// @homepage        https://github.com/MayconDIS/devmaycon-windhawk-mods
+// @homepage        https://github.com/MayconDIS/Windhawk_Mods
 // @include         windhawk.exe
 // @compilerOptions -ldwmapi -lgdi32 -lshell32 -lole32 -luuid
 // @license         GPL-3.0-only
@@ -22,7 +22,7 @@
 /*
 # Desktop Window Cards — DevMaycon
 
-![Desktop Window Cards — DevMaycon](https://raw.githubusercontent.com/MayconDIS/devmaycon-windhawk-mods/main/assets/desktop-window-cards.svg)
+![Desktop Window Cards — DevMaycon](https://raw.githubusercontent.com/MayconDIS/Windhawk_Mods/main/assets/desktop-window-cards.svg)
 
 *Original project illustration.*
 
@@ -111,7 +111,7 @@ Original card engine: **HaVeN80**, Desktop Window Cards 1.8. This edition is a d
 
 - Custom edition and maintenance: **DevMaycon**.
 - Development assistance: **OpenAI Codex**.
-- Repository: [MayconDIS/devmaycon-windhawk-mods](https://github.com/MayconDIS/devmaycon-windhawk-mods).
+- Repository: [MayconDIS/Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - GitHub profile: [MayconDIS](https://github.com/MayconDIS).
 */
 // ==/WindhawkModReadme==
