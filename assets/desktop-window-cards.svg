@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Desktop Window Cards — DevMaycon</title>
+  <desc id="desc">Original illustration of a grid of desktop preview cards.</desc>
+  <rect width="1200" height="360" rx="24" fill="#151a2d"/>
+  <text x="48" y="60" fill="#a59cff" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="4">DEVMAYCON · WINDHAWK MODS</text>
+  <text x="48" y="120" fill="#f4f3ff" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="700">Desktop Window Cards</text>
+  <text x="48" y="168" fill="#b9bdd6" font-family="Segoe UI,Arial,sans-serif" font-size="22">Keep your minimized windows in view.</text>
+  <text x="48" y="224" fill="#d5d0ff" font-family="Segoe UI,Arial,sans-serif" font-size="19">Arrange. Preview. Restore.</text>
+  <g fill="#26314e" stroke="#8072d9" stroke-width="2"><rect x="718" y="86" width="182" height="106" rx="10"/><rect x="926" y="86" width="182" height="106" rx="10"/><rect x="718" y="213" width="182" height="106" rx="10"/><rect x="926" y="213" width="182" height="106" rx="10"/></g>
+  <g stroke="#506287" stroke-width="7" stroke-linecap="round"><path d="M738 110H879M946 110H1087M738 237H879M946 237H1087"/></g>
+  <g fill="#68e0c6"><rect x="738" y="137" width="68" height="32" rx="5"/><rect x="946" y="137" width="141" height="9" rx="4"/><rect x="738" y="265" width="141" height="9" rx="4"/><rect x="946" y="265" width="68" height="32" rx="5"/></g>
+  <text x="48" y="325" fill="#8e98b6" font-family="Segoe UI,Arial,sans-serif" font-size="15">Custom edition · Original card engine credited to HaVeN80</text>
+</svg>

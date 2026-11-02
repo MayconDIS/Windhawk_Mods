@@ -1,0 +1,21 @@
+name: New mod idea
+description: Propose the next project for this collection.
+title: "[Idea] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to improve?
+      description: Describe the current behavior and the desired result.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and preferences
+      description: Which apps or Windows components should be affected?
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Add examples or links and identify the parts that inspire the idea.

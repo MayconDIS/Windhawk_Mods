@@ -1,0 +1,13 @@
+build/
+*.dll
+*.exe
+*.pdb
+*.obj
+*.reg
+*.log
+*.zip
+backup*/
+.vs/
+.vscode/
+Thumbs.db
+Desktop.ini

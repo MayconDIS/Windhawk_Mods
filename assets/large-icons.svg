@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Large icons — DevMaycon</title>
+  <desc id="desc">Original illustration of two organized folder icons.</desc>
+  <rect width="1200" height="360" rx="24" fill="#101b2d"/>
+  <path d="M0 305H1200" stroke="#273b54"/>
+  <text x="48" y="60" fill="#68e0c6" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="4">DEVMAYCON · WINDHAWK MODS</text>
+  <text x="48" y="126" fill="#f3f7ff" font-family="Segoe UI,Arial,sans-serif" font-size="47" font-weight="700">Large icons</text>
+  <text x="48" y="172" fill="#b0c1d8" font-family="Segoe UI,Arial,sans-serif" font-size="23">A consistent view for your folders.</text>
+  <rect x="48" y="213" width="187" height="43" rx="21" fill="#20364c"/>
+  <text x="71" y="241" fill="#b7f1e4" font-family="Segoe UI,Arial,sans-serif" font-size="17">96 px · adjustable</text>
+  <g transform="translate(697 115)"><path d="M0 18Q0 0 18 0H76L94 22H152Q170 22 170 40V120Q170 138 152 138H18Q0 138 0 120Z" fill="#dca642"/><path d="M0 48H170V120Q170 138 152 138H18Q0 138 0 120Z" fill="#f9ce6a"/></g>
+  <g transform="translate(910 115)"><path d="M0 18Q0 0 18 0H76L94 22H152Q170 22 170 40V120Q170 138 152 138H18Q0 138 0 120Z" fill="#2e9c94"/><path d="M0 48H170V120Q170 138 152 138H18Q0 138 0 120Z" fill="#68e0c6"/></g>
+  <text x="48" y="338" fill="#829bb8" font-family="Segoe UI,Arial,sans-serif" font-size="16">Explorer folders · Removable drives · Your preferred size</text>
+</svg>

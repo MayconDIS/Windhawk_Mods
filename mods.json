@@ -1,0 +1,20 @@
+[
+  {
+    "id": "maycon-large-folder-icons",
+    "name": "Large icons — DevMaycon",
+    "version": "1.1.0",
+    "source": "mods/maycon-large-folder-icons.wh.cpp",
+    "guide": "docs/large-icons/README.md",
+    "architectures": ["64"],
+    "libraries": ["-lole32", "-loleaut32", "-luuid", "-lshell32"]
+  },
+  {
+    "id": "maycon-desktop-window-cards",
+    "name": "Desktop Window Cards — DevMaycon",
+    "version": "1.0.1",
+    "source": "mods/maycon-desktop-window-cards.wh.cpp",
+    "guide": "docs/desktop-window-cards/README.md",
+    "architectures": ["32", "64"],
+    "libraries": ["-ldwmapi", "-lgdi32", "-lshell32", "-lole32", "-luuid"]
+  }
+]
