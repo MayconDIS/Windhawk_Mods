@@ -2,7 +2,7 @@
 // @id              maycon-desktop-window-cards
 // @name            Desktop Window Cards — Dev_Maycon
 // @description     Animated desktop previews, monitor-aware grids, and app exclusions. Customized by Dev_Maycon.
-// @version         1.0.1
+// @version         1.0.2
 // @author          Dev_Maycon
 // @github          https://github.com/MayconDIS
 // @homepage        https://github.com/MayconDIS/Windhawk_Mods
@@ -79,7 +79,7 @@ priorities or anti-cheat. Native animation behavior remains configurable.
 
 ## Validation and project files
 
-The 32-bit and 64-bit builds compiled successfully. Fourteen settings tests
+The 32-bit and 64-bit builds compiled successfully. Sixteen settings tests
 passed. The integration test created a visible 560 x 376 card when the test
 window was minimized and removed it when that window was restored.
 Card-click restoration, drag-and-drop, multiple monitors, and virtual desktop
@@ -97,6 +97,12 @@ switching were not separately exercised during that session.
 Disable this edition in Windhawk to remove its cards without closing apps.
 The original mod remains separately installed and disabled. Do not run both
 editions together. Large icons is a separate project and remains independent.
+
+## Version 1.0.2
+
+- Fixed: a blank entry in the exclusion list no longer hides the entries
+  that follow it. The whole list is read and blank entries are skipped.
+- Added tests for exclusion list collection.
 
 ## Version 1.0.1
 
@@ -490,16 +496,27 @@ std::wstring NormalizeExcludedApp(std::wstring entry) {
     return entry;
 }
 
-std::vector<std::wstring> ReadExcludedApps() {
+// Normalizes, skips blank, and deduplicates raw list entries. A blank entry in
+// the middle of the list must not hide the entries that follow it.
+std::vector<std::wstring> CollectExcludedApps(const std::vector<std::wstring>& raw) {
     std::vector<std::wstring> entries;
-    for (int i = 0; i < kMaxExcludedApps; ++i) {
-        const ScopedSettingString value(Wh_GetStringSetting(L"ExcludedApps[%d]", i));
-        auto entry = NormalizeExcludedApp(value.Copy());
-        if (entry.empty()) break;  // Windhawk terminates the list with an empty entry.
+    for (const auto& value : raw) {
+        auto entry = NormalizeExcludedApp(value);
+        if (entry.empty()) continue;
         if (std::find(entries.begin(), entries.end(), entry) == entries.end())
             entries.push_back(std::move(entry));
     }
     return entries;
+}
+
+std::vector<std::wstring> ReadExcludedApps() {
+    // Windhawk returns "" both for blank entries and past the end of the list,
+    // so read the whole bounded range. This only runs at startup and on reload.
+    std::vector<std::wstring> raw;
+    raw.reserve(kMaxExcludedApps);
+    for (int i = 0; i < kMaxExcludedApps; ++i)
+        raw.push_back(ScopedSettingString(Wh_GetStringSetting(L"ExcludedApps[%d]", i)).Copy());
+    return CollectExcludedApps(raw);
 }
 
 Settings ReadSnapshot() {

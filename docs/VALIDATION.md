@@ -10,11 +10,13 @@ Initial local validation took place on Windows 11 x64 with Windhawk 1.7.3.
 - Re-enabling restored large icons.
 - Subsequent function renaming preserved the executable logic.
 - Removable drives were not physically connected for a test.
+- 1.1.1: eight decision-logic tests cover navigation-only mode and per-tab
+  tracking; multi-tab behavior was not exercised in a live Explorer window.
 
 ## Desktop Window Cards
 
 - Both x86 and x64 DLLs compiled.
-- Fourteen parsing/default checks passed.
+- Sixteen parsing/default checks passed (1.0.2 adds exclusion list collection).
 - The dedicated host loaded and stayed separate from Explorer.
 - Minimizing an isolated test window produced one visible, uncloaked card
   measuring 560 x 376 pixels.

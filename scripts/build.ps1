@@ -38,5 +38,11 @@ if($RunTests){
     if($LASTEXITCODE -ne 0){throw 'Settings test compilation failed'}
     & $exe
     if($LASTEXITCODE -ne 0){throw 'Settings tests failed'}
+    $exeIcons=Join-Path $output 'test-large-icons.exe'
+    $argsIcons=$common+@('-DWH_EDITING','-Wall','-Wextra','-Werror','-Wno-unused-parameter','-target','x86_64-w64-mingw32','-static',(Join-Path $root 'tests\test-maycon-large-icons.cpp'),'-lole32','-loleaut32','-luuid','-lshell32','-o',$exeIcons)
+    & $compiler @argsIcons
+    if($LASTEXITCODE -ne 0){throw 'Large icons test compilation failed'}
+    & $exeIcons
+    if($LASTEXITCODE -ne 0){throw 'Large icons tests failed'}
 }
 Write-Output 'Build complete. No mods were installed or activated.'

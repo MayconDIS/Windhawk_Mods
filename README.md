@@ -10,8 +10,8 @@ be added to this repository without creating a separate repository per mod.
 
 | Project | Version | What it does | Guide |
 | --- | --- | --- | --- |
-| **Large icons — Dev_Maycon** | 1.1.0 | Keeps open Explorer folders in a consistent large-icon view. | [Read the guide](docs/large-icons/README.md) |
-| **Desktop Window Cards — Dev_Maycon** | 1.0.1 | Turns minimized windows into animated, monitor-aware desktop cards. | [Read the guide](docs/desktop-window-cards/README.md) |
+| **Large icons — Dev_Maycon** | 1.1.1 | Keeps open Explorer folders in a consistent large-icon view. | [Read the guide](docs/large-icons/README.md) |
+| **Desktop Window Cards — Dev_Maycon** | 1.0.2 | Turns minimized windows into animated, monitor-aware desktop cards. | [Read the guide](docs/desktop-window-cards/README.md) |
 
 ## Install a mod
 

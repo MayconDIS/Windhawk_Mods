@@ -57,7 +57,7 @@ priorities or anti-cheat. Native animation behavior remains configurable.
 
 ## Validation and project files
 
-The 32-bit and 64-bit builds compiled successfully. Fourteen settings tests
+The 32-bit and 64-bit builds compiled successfully. Sixteen settings tests
 passed. The integration test created a visible 560 x 376 card when the test
 window was minimized and removed it when that window was restored.
 Card-click restoration, drag-and-drop, multiple monitors, and virtual desktop
@@ -75,6 +75,12 @@ switching were not separately exercised during that session.
 Disable this edition in Windhawk to remove its cards without closing apps.
 The original mod remains separately installed and disabled. Do not run both
 editions together. Large icons is a separate project and remains independent.
+
+## Version 1.0.2
+
+- Fixed: a blank entry in the exclusion list no longer hides the entries
+  that follow it. The whole list is read and blank entries are skipped.
+- Added tests for exclusion list collection.
 
 ## Version 1.0.1
 

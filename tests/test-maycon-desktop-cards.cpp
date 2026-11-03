@@ -22,5 +22,9 @@ int main() {
     Settings defaults;
     assert(defaults.grid && !defaults.closeWindow && !defaults.includeExisting);
     assert(defaults.animationMs == 320);
-    puts("PASS: 14 checks (exclusion normalization, modifier fallback, animation mode, defaults)");
+    // A blank entry in the middle must not hide the entries after it.
+    const auto apps = CollectExcludedApps({L"cs2.exe", L"", L"  \"", L"cod.exe", L"CS2.EXE", L""});
+    assert(apps.size() == 2 && apps[0] == L"cs2.exe" && apps[1] == L"cod.exe");
+    assert(CollectExcludedApps({L"", L"", L""}).empty());
+    puts("PASS: 16 checks (exclusion normalization/collection, modifier fallback, animation mode, defaults)");
 }

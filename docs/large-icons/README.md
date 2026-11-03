@@ -53,6 +53,12 @@ WinSetView. Disabling stops enforcement; Windows may retain the last view.
 - `scripts/build.ps1` — reproducible build without installing the mod.
 - `docs/large-icons/README.md` — this guide and recovery notes.
 
+## Version 1.1.1
+
+- Fixed: navigation-only mode now tracks each Explorer tab separately, so
+  manual view changes are respected when several tabs are open.
+- Added decision-logic tests.
+
 ## Version 1.1.0
 
 - Dev_Maycon branding and original English project documentation.
