@@ -1,12 +1,12 @@
 [
   {
-    "id": "maycon-large-folder-icons",
-    "name": "Large icons — Dev_Maycon",
-    "version": "1.1.1",
-    "source": "mods/maycon-large-folder-icons.wh.cpp",
+    "id": "explorer-large-icons-view",
+    "name": "Large Icons View for File Explorer",
+    "version": "2.0.0",
+    "source": "mods/explorer-large-icons-view.wh.cpp",
     "guide": "docs/large-icons/README.md",
     "architectures": ["64"],
-    "libraries": ["-lole32", "-loleaut32", "-luuid", "-lshell32"]
+    "libraries": ["-lole32", "-luuid", "-lshell32", "-lcomctl32"]
   },
   {
     "id": "maycon-desktop-window-cards",

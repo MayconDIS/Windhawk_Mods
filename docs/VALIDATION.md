@@ -2,7 +2,16 @@
 
 Initial local validation took place on Windows 11 x64 with Windhawk 1.7.3.
 
-## Large icons
+## Large Icons View for File Explorer
+
+### 2.0.0 (hook-based)
+
+- x64 DLL compiled with `-Wall -Wextra -Werror`.
+- Eight decision-logic tests cover keep-enforcing and navigation-only modes.
+- The `CDefView` hooks, multi-tab behavior and the view saved by Explorer
+  have not yet been exercised in a live Explorer session.
+
+### 1.x (polling, superseded)
 
 - x64 DLL compiled with `-Wall -Wextra -Werror`.
 - Live folder changed from Details to large icons at 96 pixels.
@@ -10,8 +19,8 @@ Initial local validation took place on Windows 11 x64 with Windhawk 1.7.3.
 - Re-enabling restored large icons.
 - Subsequent function renaming preserved the executable logic.
 - Removable drives were not physically connected for a test.
-- 1.1.1: eight decision-logic tests cover navigation-only mode and per-tab
-  tracking; multi-tab behavior was not exercised in a live Explorer window.
+- 1.1.1: the per-tab key was a COM proxy address and turned out not to be
+  stable; replaced in 2.0.0.
 
 ## Desktop Window Cards
 

@@ -1,76 +1,36 @@
-# Large icons — Dev_Maycon
+# Large Icons View for File Explorer
 
-![Large icons — Dev_Maycon](https://raw.githubusercontent.com/MayconDIS/Windhawk_Mods/main/assets/large-icons.svg)
+Keeps File Explorer folders in **Large icons** view. The icon size is
+configurable: 96 pixels matches Windows' own Large icons.
 
-*Original project illustration.*
+## How it works
 
-**A consistent folder view, wherever your files live.**
+The view is switched when a folder opens in a File Explorer window, without
+waiting or polling.
 
-Created for Dev_Maycon with Codex assistance. This project keeps Explorer
-folders in large-icon view using Windows Shell interfaces.
+- **Keep enforcing** (default): if you switch a folder to another view, it is
+  switched back to large icons.
+- With **Keep enforcing** off, every folder opens in large icons, but a view
+  you pick manually stays until you navigate to another folder.
 
-## Quick start
+It applies to file-system folders (local, removable and network drives). The
+desktop, Open/Save dialogs, Home, This PC, the Recycle Bin and other virtual
+folders are not affected. Folder contents are never read, moved or changed.
 
-1. Enable this mod in Windhawk.
-2. Open a regular folder in File Explorer.
-3. Its view switches to large icons at the configured size.
-4. Open **Details > Settings** to customize the behavior.
+## Disabling the mod and restoring views
 
-## What this project does
+When *Remember each folder's view settings* is on (the Windows default),
+Explorer saves the view of each folder you open. Every folder opened while the
+mod is enabled is therefore saved in large icons, and keeps that view after the
+mod is disabled or removed.
 
-| Feature | Behavior |
-| --- | --- |
-| Consistent sizing | Uses 96 pixels by default; adjustable from 32 to 256. |
-| Local and removable drives | Applies to open filesystem folders, including USB drives. |
-| Network folders | Uses the same Shell view interface for network paths. |
-| Keep enforcing | Reapplies the selected view after a manual change. |
-| Navigation-only mode | Allows manual changes until the next folder navigation. |
-| Lightweight updates | Checks open views; does not scan folder contents. |
-
-## Settings
-
-**Icon size:** 96 pixels corresponds to Large icons.
-**Check interval:** 1500 milliseconds by default; lower values react sooner.
-**Keep enforcing:** turn this off if you prefer to change a view temporarily.
-
-## Scope and limitations
-
-The desktop, Home, This PC, Recycle Bin, and Open/Save dialogs are excluded.
-Minimized Explorer windows are processed after restoration. Tabs are processed
-when the Shell exposes their views. A brief delay before applying the view is
-normal. Removable drives were not physically connected during validation.
-
-## Your files stay in place
-
-This mod changes presentation only. It does not move, delete, upload, or index
-your files and does not clear Explorer's saved view cache. It does not require
-WinSetView. Disabling stops enforcement; Windows may retain the last view.
-
-## Project files
-
-- `maycon-large-folder-icons.wh.cpp` — complete source, settings, and this guide.
-- `scripts/validate.ps1` — metadata, guide, and credit checks.
-- `scripts/build.ps1` — reproducible build without installing the mod.
-- `docs/large-icons/README.md` — this guide and recovery notes.
-
-## Version 1.1.1
-
-- Fixed: navigation-only mode now tracks each Explorer tab separately, so
-  manual view changes are respected when several tabs are open.
-- Added decision-logic tests.
-
-## Version 1.1.0
-
-- Dev_Maycon branding and original English project documentation.
-- Clearer function names for view processing and monitoring.
-- Existing mod identity and user settings preserved during the update.
-
+To restore the default view of all folders, open **Folder Options > View** and
+select **Reset Folders**.
 
 ## Credits and links
 
-Original project: **Dev_Maycon**, developed with Codex assistance. Licensed under **GPL-3.0-only**.
+Original project by **Dev_Maycon**, developed with AI assistance. Licensed
+under **GPL-3.0-only**.
 
-- Custom edition and maintenance: **Dev_Maycon**.
-- Development assistance: **OpenAI Codex**.
 - Repository: [MayconDIS/Windhawk_Mods](https://github.com/MayconDIS/Windhawk_Mods).
 - GitHub profile: [MayconDIS](https://github.com/MayconDIS).

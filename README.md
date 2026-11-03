@@ -10,7 +10,7 @@ be added to this repository without creating a separate repository per mod.
 
 | Project | Version | What it does | Guide |
 | --- | --- | --- | --- |
-| **Large icons — Dev_Maycon** | 1.1.1 | Keeps open Explorer folders in a consistent large-icon view. | [Read the guide](docs/large-icons/README.md) |
+| **Large Icons View for File Explorer** | 2.0.0 | Keeps File Explorer folders in Large icons view, with a configurable icon size. | [Read the guide](docs/large-icons/README.md) · [Changelog](docs/large-icons/CHANGELOG.md) |
 | **Desktop Window Cards — Dev_Maycon** | 1.0.2 | Turns minimized windows into animated, monitor-aware desktop cards. | [Read the guide](docs/desktop-window-cards/README.md) |
 
 ## Install a mod
@@ -22,12 +22,14 @@ be added to this repository without creating a separate repository per mod.
 4. Enable the mod and open **Details > Settings** to customize it.
 
 Both mods have been submitted to the official Windhawk catalog and are
-awaiting maintainer review. Track [Large icons (#6894)](https://github.com/ramensoftware/windhawk-mods/pull/6894)
+awaiting maintainer review. Track [Large Icons View for File Explorer (#6894)](https://github.com/ramensoftware/windhawk-mods/pull/6894)
 and [Desktop Window Cards (#6895)](https://github.com/ramensoftware/windhawk-mods/pull/6895).
 Submission does not mean catalog acceptance; use the manual installation
 steps above while review is pending. Do not enable two editions of Desktop Window Cards at the
-same time. Internal mod IDs retain their original spelling so existing
-settings remain compatible.
+same time. Desktop Window Cards keeps its original internal ID so existing
+settings remain compatible. Large Icons View for File Explorer moved to the ID
+`explorer-large-icons-view` in 2.0.0; settings of the old
+`maycon-large-folder-icons` ID are not carried over.
 
 ## Build and validate
 
@@ -64,7 +66,8 @@ linking back to this repository and the maintainer's profile.
 ## License and attribution
 
 This collection is distributed under [GPL-3.0-only](LICENSE).
-Large icons is a Dev_Maycon project developed with Codex assistance.
+Large Icons View for File Explorer is a Dev_Maycon project developed with AI
+assistance (OpenAI Codex and Claude Code).
 Desktop Window Cards is a derivative of HaVeN80's original mod; the original
 engine's authorship is preserved in its source and guide. See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -24,7 +24,7 @@ foreach($mod in $mods){
         $dll=Join-Path $dir ('local@'+$mod.id+'_'+$mod.version+'.dll')
         $defines=@(('-DWH_MOD_ID=L"local@'+$mod.id+'"'),('-DWH_MOD_VERSION=L"'+$mod.version+'"'))
         $warnings=@('-Wall','-Wextra','-Wno-unused-parameter','-Wno-missing-field-initializers')
-        if($mod.id -eq 'maycon-large-folder-icons'){$warnings+= '-Werror'}
+        if($mod.id -eq 'explorer-large-icons-view'){$warnings+= '-Werror'}
         $arguments=$common+$defines+$warnings+@('-shared','-Wl,--export-all-symbols','-target',$target,(Join-Path $enginePath ($arch+'\windhawk.lib')),(Join-Path $root $mod.source))+$mod.libraries+@('-o',$dll)
         & $compiler @arguments
         if($LASTEXITCODE -ne 0){throw ('Build failed: '+$mod.id+' / '+$arch)}
@@ -39,7 +39,7 @@ if($RunTests){
     & $exe
     if($LASTEXITCODE -ne 0){throw 'Settings tests failed'}
     $exeIcons=Join-Path $output 'test-large-icons.exe'
-    $argsIcons=$common+@('-DWH_EDITING','-Wall','-Wextra','-Werror','-Wno-unused-parameter','-target','x86_64-w64-mingw32','-static',(Join-Path $root 'tests\test-maycon-large-icons.cpp'),'-lole32','-loleaut32','-luuid','-lshell32','-o',$exeIcons)
+    $argsIcons=$common+@('-DWH_EDITING','-Wall','-Wextra','-Werror','-Wno-unused-parameter','-target','x86_64-w64-mingw32','-static',(Join-Path $root 'tests\test-explorer-large-icons-view.cpp'),'-lole32','-luuid','-lshell32','-lcomctl32','-o',$exeIcons)
     & $compiler @argsIcons
     if($LASTEXITCODE -ne 0){throw 'Large icons test compilation failed'}
     & $exeIcons
