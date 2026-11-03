@@ -19,8 +19,11 @@ Initial local validation took place on Windows 11 x64 with Windhawk 1.7.3.
   - The first live run found that icon size changes bypass
     `SetCurrentViewMode`; the optional `_SwitchToViewModeAndIconSize` hook was
     added and verified.
-- Not covered: real Explorer tabs (each navigation and window used its own
-  view window), physical removable drives, and Open/Save dialogs.
+- Two-tab test (navigation-only mode, tabs opened and switched with Ctrl+T,
+  Ctrl+1 and Ctrl+2): each tab had its own view window; a tab switched to
+  Details stayed in Details after switching away and back (confirmed with
+  window captures), and navigating in that tab applied 96 px again.
+- Not covered: physical removable drives and Open/Save dialogs.
 
 ### 1.x (polling, superseded)
 
