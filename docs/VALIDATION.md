@@ -8,8 +8,19 @@ Initial local validation took place on Windows 11 x64 with Windhawk 1.7.3.
 
 - x64 DLL compiled with `-Wall -Wextra -Werror`.
 - Eight decision-logic tests cover keep-enforcing and navigation-only modes.
-- The `CDefView` hooks, multi-tab behavior and the view saved by Explorer
-  have not yet been exercised in a live Explorer session.
+- Live test on November 3, 2026 (Windows 11 x64, Windhawk 1.7.3), driving test
+  folders through a COM probe and a simulated Ctrl+mouse wheel:
+  - All three hooks resolved; the DLL loaded into `explorer.exe`.
+  - New folders, navigation, and a folder saved in Details opened at 96 px.
+  - Keep enforcing reverted Details, a 48 px icon size and Ctrl+wheel.
+  - Navigation-only mode kept Details, 48 px and Ctrl+wheel changes until the
+    next navigation, which applied 96 px again.
+  - Settings changes re-applied to open folders; the desktop was not affected.
+  - The first live run found that icon size changes bypass
+    `SetCurrentViewMode`; the optional `_SwitchToViewModeAndIconSize` hook was
+    added and verified.
+- Not covered: real Explorer tabs (each navigation and window used its own
+  view window), physical removable drives, and Open/Save dialogs.
 
 ### 1.x (polling, superseded)
 

@@ -6,7 +6,9 @@
   `explorer-large-icons-view`. Settings of the previous ID
   (`maycon-large-folder-icons`) are not carried over.
 - Event-driven: hooks `CDefView::UIActivate` and `CDefView::SetCurrentViewMode`
-  in `shell32.dll` instead of polling every Explorer window. Folders open
+  in `shell32.dll` instead of polling every Explorer window, plus an optional
+  hook on `CDefView::_SwitchToViewModeAndIconSize` so icon size changes
+  (Medium icons, Ctrl+mouse wheel) are also enforced. Folders open
   directly in large icons; the *Check interval* setting was removed.
 - Fixed: navigation-only mode tracks each view window (one per tab and
   navigation), so manual view changes are kept, also after a minimized window
